@@ -2,7 +2,7 @@
 * sqlite: 3.11.0
 * node: v8.11.1
 ## deploy the project
-* go to the project's root folder and run this command: 
+* go to the project's root folder and run this command(for Linux users): 
 git clone https://github.com/Dimon41k/webbylab.git && cd webbylab && npm i && npm start && cd server && npm i && npm start
 
 
