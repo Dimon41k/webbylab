@@ -1,0 +1,45 @@
+{
+  "name": "WebbyLabTestApp",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-plugin-import": "^1.7.0",
+    "jest-expo": "25.0.0",
+    "react-native-scripts": "1.11.1",
+    "react-test-renderer": "16.2.0"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "antd-mobile": "^2.1.8",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "eslint": "^3.19.0",
+    "expo": "^26.0.0",
+    "immutable": "^3.8.2",
+    "native-base": "^2.4.5",
+    "nodemon": "^1.17.3",
+    "react": "^16.3.2",
+    "react-native": "0.54.0",
+    "react-native-elements": "^0.19.1",
+    "react-native-grid-component": "^1.0.10",
+    "react-native-router-flux": "^4.0.0-beta.28",
+    "react-navigation": "git+https://github.com/react-community/react-navigation.git",
+    "react-redux": "^5.0.7",
+    "react-router-native": "^4.2.0",
+    "redux": "^4.0.0",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.2.0",
+    "socket.io-client": "^2.1.0"
+  }
+}
