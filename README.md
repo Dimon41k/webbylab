@@ -2,7 +2,7 @@
 * sqlite: 3.11.0
 * node: v8.11.1
 ## deploy the project
-*go to the project's root folder and run this command
+* go to the project's root folder and run this command
 npm i && npm start && cd server && npm i && npm start
 
 
