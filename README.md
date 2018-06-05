@@ -4,7 +4,7 @@
 ## deploy the project
  go to the project's root folder and run this commands(for Linux users): 
 * "git clone git://github.com/Dimon41k/webbylab.git"
-*"cd webbylab && npm i && npm start && cd server && npm i && npm start"
+* "cd webbylab && npm i && npm start && cd server && npm i && npm start"
 
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
