@@ -74,13 +74,13 @@ export default  class SwipeableList extends React.Component {
       <View style={styles.size}>
       {
         this.props.list.length>0 &&
-      <View style={this.state.width>this.state.height ? {height: '55%'} : {height: '70%'}}> 
+      <View style={this.state.width>this.state.height ? {height: '50%'} : {height: '70%'}}>
         <FlatList
           data={this.props.list}
           renderItem={({ item }) => this.getItemOfList(item)}
           keyExtractor={item => item.title}
           onEndReached={this.onEndReached}
-          onEndReachedThreshold ={0.1}
+          onEndReachedThreshold ={0.01}
           ItemSeparatorComponent={this.getSeperator}
           onMomentumScrollBegin={() => { this.onEndReachedCalledDuringMomentum = false; }}
         />

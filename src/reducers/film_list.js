@@ -1,17 +1,15 @@
 import { 
     ADD_FILM,
     DELETE_FILM,
-    SHOW_FILM_INFO,
     SHOW_SORTING_LIST_BY_NAME_ASC,
     FIND_FILM_BY_NAME,
     FIND_FILM_BY_ACTOR_NAME,
     IMPORT_FILMS_FROM_TXT,
     CHOOSE_SEARCH_TYPE,
-    SET_PAGINATION,
-    RESET_DATA,
     LOADING
  } from '../actions'
- import { fromJS } from 'immutable';
+import { fromJS } from 'immutable';
+import cfg from '../config/cfg'
 
 
 const FilmList = (state=fromJS({
@@ -19,7 +17,8 @@ const FilmList = (state=fromJS({
     type:"default",
     find: '',
     animationLoads: false,
-    nextPage: 0
+    nextPage: 0,
+    default_load_file: cfg.host +'/'+ cfg.default_load_file,
 }), action) => {
 
     switch(action.type){
@@ -35,9 +34,6 @@ const FilmList = (state=fromJS({
         case DELETE_FILM: 
             return state.set('data',state.get('data').filter(item=>item.id != action.id));
 
-        case SHOW_FILM_INFO:
-
-            return state.set('film_info', state.data.find(x=>x.film_id === action.id));
 
         case SHOW_SORTING_LIST_BY_NAME_ASC:  
             let filteringArray = [...state.get('data'),  ...action.response.data];
