@@ -1,12 +1,15 @@
 ## used versions of sqlite and node.js
 * sqlite: 3.22.0
 * node: v8.11.2
+* npm: 5.6.0
 ## deploy the project
  go to the project's root folder and run this commands(for Linux users): 
 * "git clone git://github.com/Dimon41k/webbylab.git && cd webbylab && npm i && cd server && npm i && npm start"
 * change in webbylab/src/config/cfg.js field 'host' on your ip in your local network like this host: "http://\*.\*.\*.\*:3000/"
 * "cd ../.. && npm start"
-
+## about app architecture
+* back-end: https://github.com/kunalkapadia/express-mongoose-es6-rest-api
+* front-end: standard react-redux app
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
