@@ -54,7 +54,8 @@ const getAllFilmsByTitle = (title) => {
       title: {
         [con.Op.like]: '%' + title + '%'
       }
-    }
+    },
+    order:[['title', 'ASC']]
   })
 }
 

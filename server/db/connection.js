@@ -22,7 +22,7 @@ const Film = sequelize.define('films', {
     type: Sequelize.INTEGER,
     primaryKey: true
   },
-  title: { type: Sequelize.STRING, unique: true },
+  title: { type: Sequelize.STRING, unique: true, validate: { len: [1,50] } },
   year: Sequelize.STRING,
   format: Sequelize.ENUM('DVD', 'VHS', 'Blu-Ray')
 })

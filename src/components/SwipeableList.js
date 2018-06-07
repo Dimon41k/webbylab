@@ -6,7 +6,7 @@ import { SwipeRow, Button, Icon, Text } from 'native-base'
 export default class SwipeableList extends React.Component {
   constructor (props) {
     super(props)
-    this.state = Dimensions.get('window')
+    this.state = Dimensions.get('window');
   }
 
   componentDidMount () {
@@ -19,6 +19,8 @@ export default class SwipeableList extends React.Component {
       this.onEndReachedCalledDuringMomentum = true
     }
   }
+
+
 
   getItemOfList = (params) => {
     let infoStr = `film: ${params.title} \nyear: ${params.year} \nformat: ${params.format} \nstars: `
@@ -64,12 +66,14 @@ export default class SwipeableList extends React.Component {
     )
   }
 
+
+
   render () {
     return (
       <View style={styles.size}>
         {
           this.props.list.length > 0 &&
-          <View style={this.state.width > this.state.height ? {height: '50%'} : {height: '70%'}}>
+          <View style={this.state.width > this.state.height ? {height: '70%'} : {height: '70%'}}>
             <FlatList
               data={this.props.list}
               renderItem={({ item }) => this.getItemOfList(item)}
@@ -87,6 +91,7 @@ export default class SwipeableList extends React.Component {
             toast
             text='Loading...'
             animating
+
           />
         </View>
         }
